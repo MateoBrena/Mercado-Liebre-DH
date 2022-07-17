@@ -1,0 +1,283 @@
+@import url(styles.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: #ebebeb;
+    font-family : 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+
+}
+
+main section {
+    margin-bottom: 10px;
+    background-color: #ebebeb;
+    width: 80%;
+    margin: auto;
+}
+
+section article {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+section article div {
+    margin: auto;
+}
+
+.envios i{
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;  
+    position: absolute;
+    right: 5%;
+    bottom: 60%;
+}
+
+.envios {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    }
+
+
+.precio-y-descuento {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.descuento {
+    color: #39b54a;
+    flex-grow: 0.7;  
+}
+
+.precio {
+    flex-grow: 0.3;
+}
+
+.descripcion {
+    color: #666;
+    position: relative;
+    left: 5%;
+    margin-bottom: 10px;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.formulario-registro label {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.formulario-registro input {
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario-registro section p label {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.form-text {
+    width: 90%;
+}
+
+.perfil-de-usuario {
+    display: flex;
+}
+
+.intereses {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intereses p {
+    background-color: #ebebeb;
+    display: flex;
+    gap: 5px;
+    font-weight: normal;
+    align-items: center;
+}
+
+.comprador {
+    margin-right: 10px;
+}
+
+#foto-usuario {
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.botones button {
+    padding: 15px;
+    color: white;
+    background-color: #03264C;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formulario-login input,
+.formulario-login button {
+    margin: 15px 0px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario-login button{
+    background-color:#03264C;
+    color: white;
+}
+
+.descripcion {
+    opacity: 0%;
+    transition: opacity 450ms
+}
+
+.descripcion:hover {
+    opacity: 100%;
+}
+
+main section article {
+    box-shadow: none;
+    transition: box-shadow 450ms
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+@keyframes rotacion{
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.envios i:hover {
+    animation-name: rotacion;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.login-button {
+    transition: background-color 450ms
+}
+
+.login-button:hover {
+    background-color: #0022AA
+}
+
+
+@media (min-width: 360px){
+    main {
+        min-height: 230px;
+    }
+    
+}
+
+@media (min-width: 768px){
+    
+    .primera-section, .segunda-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .primera-section article , .segunda-section article {
+        flex-grow: 0.4;
+        max-width: 40%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .primera-section, .segunda-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .primera-section article , .segunda-section article {
+        flex-grow: 0.25;
+        max-width: 20%;
+    }
+    .titulares {
+        margin-bottom: 20px;
+    }
+    .formulario-login {
+        position: relative;
+        width: 80%;
+        top: 10px;
+        left: 150px;
+    }
+
+    .form-text {
+        height: 35px;
+    }
+    
+    .formulario-login input,
+    .formulario-login button { 
+        height: 35px;
+    }
+}

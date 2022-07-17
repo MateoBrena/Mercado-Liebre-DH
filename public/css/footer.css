@@ -1,0 +1,59 @@
+@import url(styles.css);
+
+footer {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+footer article{
+    color: #666;   
+}
+
+footer article i {
+    margin: 10px;
+    font-size: 2em;
+    color: #03264C;
+}
+
+footer h4 {
+    margin: 0px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+#copyright {
+    color: #666
+}
+
+
+
+@media (min-width: 1280px) {
+  
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;    
+    }
+    #copyright {
+        position: absolute;
+        left: 10px;
+        bottom: 0px;
+    }
+    footer article {
+        margin-bottom: 50px;
+    }
+    footer article i {
+        transition: color 450ms;
+    }
+    footer article i:hover {
+        color: #EAC926;
+    }
+    .footer-login {
+        position: absolute;
+        bottom: 0px;
+    }
+     
+}
